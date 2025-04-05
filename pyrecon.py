@@ -50,7 +50,7 @@ def check_username(username):
 
     for site, url in platforms.items():
         try:
-            res = requests.get(url, timeout=5, headers={"User-Agent": "pystalk"})
+            res = requests.get(url, timeout=5, headers={"User-Agent": "pyrecon"})
             if res.status_code == 200:
                 print(f"{Fore.GREEN}[+] Found on {site}: {url}{Style.RESET_ALL}")
             elif res.status_code == 404:
@@ -62,7 +62,7 @@ def check_username(username):
 
 def check_email(email):
     print(f"{Fore.CYAN}[*] Checking data breaches for email: {email}{Style.RESET_ALL}")
-    headers = {"User-Agent": "pystalk-checker"}
+    headers = {"User-Agent": "pyrecon-checker"}
     res = requests.get(f"https://haveibeenpwned.com/unifiedsearch/{email}", headers=headers)
 
     if res.status_code == 200:
@@ -99,7 +99,7 @@ def extract_metadata(file_path):
             print(f"{Fore.GREEN}[{tag}] {tags[tag]}{Style.RESET_ALL}")
 
 def main():
-    parser = argparse.ArgumentParser(description="pyStalk - Simple OSINT CLI Tool")
+    parser = argparse.ArgumentParser(description="pyrecon - Simple OSINT CLI Tool")
     parser.add_argument('--user', help='Username to check across platforms')
     parser.add_argument('--email', help='Email address to check for breaches')
     parser.add_argument('--domain', help='Domain to fetch WHOIS and DNS info')
