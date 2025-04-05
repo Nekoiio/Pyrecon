@@ -2,7 +2,7 @@
 
 set -e
 
-echo "[*] Setting up pyStalk..."
+echo "[*] Setting up pyRecon..."
 
 # Check for Python3
 if ! command -v python3 &> /dev/null; then
@@ -29,10 +29,10 @@ for pkg in "${REQUIREMENTS[@]}"; do
 done
 
 # Make the script executable
-chmod +x pystalk.py
+chmod +x pyrecon.py
 
 # Move to /usr/local/bin as pystalk
 echo "[*] Installing pystalk system-wide..."
-sudo cp pystalk.py /usr/local/bin/pystalk
+sudo cp pyrecon.py /usr/local/bin/pyrecon
 
-echo "[✓] Installation complete! You can now use 'pystalk' from anywhere."
+echo "[✓] Installation complete! You can now use 'pyrecon' from anywhere."
