@@ -1,6 +1,6 @@
-# pyStalk 🚨 - A Powerful OSINT Tool for Username Search
+# pyStalk 🚨 - A Simple OSINT Tool
 
-`pyStalk` is a **simple but powerful** OSINT (Open Source Intelligence). Whether you're a cybersecurity pro, researcher, or curious about a username across the web, this tool has got you covered! 🔍🌐
+`pyStalk` is a **simple** OSINT (Open Source Intelligence). Whether you're a cybersecurity pro, researcher, or curious about a username across the web, this tool has got you covered! 🔍🌐
 
 ---
 
